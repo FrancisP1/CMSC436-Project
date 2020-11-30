@@ -15,6 +15,8 @@ class ClaimItem : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.claim_item)
 
+        getSupportActionBar()!!.setTitle("Lost and Found")
+
         val header = findViewById<TextView>(R.id.header)
 
     }
