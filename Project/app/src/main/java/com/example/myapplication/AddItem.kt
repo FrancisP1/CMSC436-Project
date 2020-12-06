@@ -33,22 +33,22 @@ class AddItem : AppCompatActivity() {
         arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, itemArray)
         itemList.adapter = arrayAdapter
 
-        val brandText = findViewById<EditText>(R.id.brand)
-        val itemText = findViewById<EditText>(R.id.item)
-        val colorText = findViewById<EditText>(R.id.color)
-        val sizeText = findViewById<EditText>(R.id.size)
-        val descriptionText = findViewById<EditText>(R.id.furtherDescription)
+        var brandText = findViewById<EditText>(R.id.brand)
+        var itemText = findViewById<EditText>(R.id.item)
+        var colorText = findViewById<EditText>(R.id.color)
+        var sizeText = findViewById<EditText>(R.id.size)
+        var descriptionText = findViewById<EditText>(R.id.furtherDescription)
 
         val enterButton = findViewById<Button>(R.id.enterItem)
 
         enterButton.setOnClickListener {
             if(!(brandText.text.isEmpty() || itemText.text.isEmpty() || colorText.text.isEmpty() ||
                 sizeText.text.isEmpty())) {
-                val brandText = brandText.text
-                val itemText = itemText.text
-                val colorText = colorText.text
-                val sizeText = sizeText.text
-                val descriptionText = descriptionText.text
+                    brandText = brandText.text as EditText
+                    itemText = itemText.text as EditText
+                    colorText = colorText.text as EditText
+                    sizeText = sizeText.text as EditText
+                    descriptionText = descriptionText.text as EditText
 
                 val resultIntent = Intent()
                 resultIntent.putExtra("brand", brandText.toString())
