@@ -4,4 +4,8 @@
         <item>Clothing and Shoes</item>
         <item>Other</item>
     </string-array>
+
+    <string-array name="lost_items">
+        <item>Hoodie</item>
+    </string-array>
 </resources>
