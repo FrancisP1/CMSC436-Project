@@ -1,6 +1,5 @@
 package com.example.myapplication
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -57,6 +56,7 @@ class AddItem : AppCompatActivity() {
                 resultIntent.putExtra("size", sizeText.toString())
                 resultIntent.putExtra("description", descriptionText.toString())
                 resultIntent.putExtra("array", intent.getStringExtra("itemArray"))
+                resultIntent.putExtra("entered", true)
                 setResult(0, resultIntent)
                 finish()
             }

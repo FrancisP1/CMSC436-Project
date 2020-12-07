@@ -2,6 +2,10 @@
     android:layout_width = "match_parent"
     android:layout_height = "match_parent"
     android:label="Lost and Found"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:layout_marginTop="15sp"
+    android:layout_marginBottom="15sp"
     android:orientation = "vertical" >
 
     <TextView
@@ -10,5 +14,12 @@
         android:layout_height = "wrap_content"
         android:textSize = "32sp"
         android:text = "Claim your item" />
+
+    <TextView
+        android:id = "@+id/attributes"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "24sp"
+        android:text = "" />
 
 </LinearLayout>
